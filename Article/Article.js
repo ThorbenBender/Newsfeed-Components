@@ -24,7 +24,7 @@ class Article {
     } else{
       this.expandButton.textContent = 'Click to open!';
     }
-    console.log('Hello');
+    TweenMax.to(article, 2, {left: 600});
   }
 }
 
@@ -41,3 +41,4 @@ articles.forEach(article => {
   return new Article(article);
 })
 console.log(articles);
+

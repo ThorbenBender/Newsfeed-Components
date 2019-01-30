@@ -63,6 +63,7 @@
 }
 .menu--open {
   display: block;
+  animation: ease-in 2s;
 }
 .articles {
   margin-top: 95px;
