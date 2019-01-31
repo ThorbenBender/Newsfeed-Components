@@ -18,6 +18,19 @@
   z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
 
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+
 .menu ul li{
   list-style-type: none;
   font-size: 32px;
@@ -27,4 +40,7 @@
 
 .menu--open {
   display: block;
+  animation: ease-in 2s;
 }
+
+
